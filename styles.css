@@ -1,0 +1,119 @@
+*  {
+	margin: 0;
+}
+
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #e0e8ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+
+}
+
+.container {
+	width: 350px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.illustration_hero {
+	border-radius: 15px 15px 0px 0px;
+	width: 350px;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+	height: 80px;
+	border-radius: 10px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: hsl(225, 100%, 98%);
+}
+
+.price {
+	display: flex;
+	flex-direction: column;
+	margin-left: -30px;
+}
+
+h1, p {
+	font-weight: 700;
+}
+
+h1 {
+	color: hsl(223, 47%, 23%);
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+p {
+	font-weight: 16px;
+	text-align: center;
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+	font-size: 16px;
+}
+
+p:first-child {
+	font-weight: 600;
+	color: hsl(223, 47%, 23%);
+}
+
+.btn_payment, .btn_order {
+	border: none;
+	margin-bottom: 30px;
+	width: 300px;
+	padding: 15px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+.btn_payment {
+	background-color: hsl(245, 75%, 52%);
+	color: #FFF;
+	box-shadow: 0px 20px 10px hsl(225, 100%, 94%);
+}
+
+.btn_order {
+	color: hsl(224, 23%, 55%);
+	font-weight: 700;
+	background-color: transparent;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #766cf1;
+	transition: 0.2s;
+}
+
+.btn_payment:hover {
+	background-color: #766cf1;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn_order:hover {
+	color: hsl(223, 47%, 23%);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+@media all and (max-device-width: 480px) {
+	body {
+		background-image: url(images/pattern-background-mobile.svg);
+	}
+}
